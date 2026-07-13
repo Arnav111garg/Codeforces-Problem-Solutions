@@ -18,8 +18,8 @@ int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int t = 1; // Number of test cases
-    // cin >> t; // Uncomment for multiple test cases
+    int t = 1; 
+    // cin >> t; 
     while (t--) {
         solve();
     }
