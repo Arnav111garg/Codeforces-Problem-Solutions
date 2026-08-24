@@ -1,0 +1,38 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+void solve() {
+    int n;
+    if (!(cin >> n)) return;
+
+    vector<bool> visited(n + 1, false);
+    vector<int> p;
+
+    for (int i = 0; i < 2 * n; ++i) {
+        int x;
+        cin >> x;
+        if (!visited[x]) {
+            visited[x] = true;
+            p.push_back(x);
+        }
+    }
+
+    for (int i = 0; i < n; ++i) {
+        cout << p[i] << (i == n - 1 ? "" : " ");
+    }
+    cout << "\n";
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int t;
+    if (cin >> t) {
+        while (t--) {
+            solve();
+        }
+    }
+
+    return 0;
+}
